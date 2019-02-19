@@ -4,11 +4,9 @@ function groupIntoLines() {
     var result = [];
     var line = words[0];
     if  (line.length > 21) {
-        let nextLine = line.substr(0, 21);
+        let nextLine = line.substring(0, 21);
         result.push(nextLine); 
-        let nextSecondLine = line.substr(21, 21);
-        result.push(nextSecondLine);
-        line = line.substr(42, 21);
+        line = line.substring(21, 42);
     };
     for (i = 1; i < words.length; i++) {
         let word = words[i]; 
