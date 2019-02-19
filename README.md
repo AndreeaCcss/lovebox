@@ -1,5 +1,6 @@
 # lovebox
 Washpoppin
+
 The Lovebox is a device that incorporates a messanger. It is used through a mobile app that allows you to send messages to that device.
 
 I created a Node https client that connects to the Lovebox server using a POST request in order to send messages directly from your terminal, without using the mobile app. 
