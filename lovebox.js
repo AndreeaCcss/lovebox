@@ -5,6 +5,7 @@ const url = "https://api-v3.loveboxlove.com/graphql";
 
 let text = process.argv[2];
 let words = text.split(" ");
+let space = " ";
 function groupIntoLines(words) {
     let result = [];
     let line = words[0];
@@ -44,7 +45,7 @@ const postData = JSON.stringify({
     "variables": {
           "boxId": process.env.BOX_ID,
           "date": null,
-          "content": `${groupIntoLines(words)}`,
+          "content": `${groupIntoLines(words)}${space.padEnd(168)}`,
           "type": 1,
           "sendEmail": false
         },
