@@ -18,17 +18,17 @@ function groupIntoLines(words) {
         if(spaceLength = 1, spaceLength + line.length + word.length <= 21) {
             line = line + " " + word;
         } else if (line.length > 21) {
-                let nextLine = line.substr(0, 21);
+                let nextLine = line.substring(0, 21);
                 result.push(nextLine);
-                line = line.substr(21, 21); 
+                line = line.substring(21, 42); 
                 result.push(line);
                 line = word;
         } else {
             result.push(line);
             if (word.length > 21) {
-                let nextSecondLine = word.substr(0, 21);
+                let nextSecondLine = word.substring(0, 21);
                 result.push(nextSecondLine);
-                line = word.substr(21, 21); 
+                line = word.substring(21, 42); 
             } else {
                 line = word;
             }
