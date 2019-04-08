@@ -1,5 +1,5 @@
 # lovebox
-Washpoppin
+Node HTTPS Client
 
 The Lovebox is a device that incorporates a messanger. It is used through a mobile app that allows you to send messages to that device.
 
